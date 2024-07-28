@@ -3,12 +3,12 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
-import DetailPage from './Pages/Detail';
+import Headphones from './Pages/Headphones';
 import Speakers from './Pages/Speakers';
 import Earphones from './Pages/Earphones';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import ProductDetailPage from './Pages/ProductDetailPage';
+import HeadphonesDetails from './Pages/HeadphonesDetails';
 import SpeakerDetailPage from './Pages/SpeakerDetailPage';
 import EarphoneDetailPage from './Pages/EarphoneDetailPage';
 import CheckoutPage from './Pages/CheckoutPage';
@@ -63,8 +63,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/speaker" element={<Speakers />} />
             <Route path="/earphone" element={<Earphones />} />
-            <Route path="/detail" element={<DetailPage addToCart={addToCart} />} />
-            <Route path="/product/:productId" element={<ProductDetailPage addToCart={addToCart} />} />
+            <Route path="/Headphone" element={<Headphones addToCart={addToCart} />} />
+            <Route path="/product/:productId" element={<HeadphonesDetails addToCart={addToCart} />} />
             <Route path="/speaker/:productId" element={<SpeakerDetailPage addToCart={addToCart} />} />
             <Route path="/earphones/:productId" element={<EarphoneDetailPage addToCart={addToCart} />} />
             <Route path="/checkout" element={<CheckoutPage cartItems={cartItems} />} /> {/* Pass cartItems */}

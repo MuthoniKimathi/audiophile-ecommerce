@@ -4,7 +4,7 @@ import manListeningImage from '../assets/images/image7.png';
 import data from '../data.json';
 import '../index.css';
 
-const DetailPage = () => {
+const HeadPhones = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -84,5 +84,5 @@ const DetailPage = () => {
   );
 };
 
-export default DetailPage;
+export default HeadPhones;
 

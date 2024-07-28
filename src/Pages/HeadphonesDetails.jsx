@@ -6,7 +6,7 @@ import data from '../data.json';
 import '../index.css';
 import manListeningImage from '../assets/images/image7.png';
 
-const ProductDetailPage = ({ addToCart }) => {
+const HeadphonesDetails = ({ addToCart }) => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(0);
@@ -143,5 +143,5 @@ const ProductDetailPage = ({ addToCart }) => {
   );
 };
 
-export default ProductDetailPage;
+export default HeadphonesDetails;
 
